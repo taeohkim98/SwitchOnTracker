@@ -1,0 +1,53 @@
+name: switch_on_diet
+description: Switch-On 28일 다이어트 트래킹 앱 (완전 오프라인)
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # 상태 관리: BLoC/Cubit 패턴
+  flutter_bloc: ^8.1.3
+
+  # 로컬 DB: 빠른 키-값 저장소 (오프라인 전용)
+  hive_flutter: ^1.1.0
+
+  # 로컬 알림: 서버 없이 기기 내 알림 예약
+  flutter_local_notifications: ^17.0.0
+
+  # 타임존 지원 (flutter_local_notifications의 zonedSchedule에 필요)
+  timezone: ^0.9.0
+
+  # 폭죽 애니메이션: 하루 완료 보상
+  confetti: ^0.7.0
+
+  # 파일 선택기: JSON 데이터 가져오기
+  file_picker: ^6.1.1
+
+  # 날짜/시간 포맷
+  intl: ^0.20.2
+
+  # 의존성 주입: 서비스 로케이터
+  get_it: ^7.6.4
+
+  # 파일 시스템 접근
+  path: ^1.8.3
+
+  # 아이콘
+  cupertino_icons: ^1.0.2
+
+  # 한국어 날짜 로케일 지원 (DatePicker 한글화)
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
